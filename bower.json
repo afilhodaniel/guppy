@@ -1,0 +1,25 @@
+{
+  "name": "gubop",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Daniel Filho <afilhodaniel@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "jquery": "~2.2.1",
+    "font-awesome": "~4.5.0"
+  }
+}
