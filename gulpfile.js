@@ -52,8 +52,8 @@ gulp.task('spritesmith', function() {
   var data = gulp.src(SPRITES_PATH)
     .pipe(spritesmith({
       imgName: 'sprites.png',
-      imgPath: '/' + IMAGES_PATH + '/sprites.png',
-      cssName: 'sprites.css'
+      imgPath: IMAGES_PATH + '/sprites.png',
+      cssName: '_sprites.scss'
     }));
 
   var imgStream = data.img
@@ -62,7 +62,7 @@ gulp.task('spritesmith', function() {
     .pipe(gulp.dest(IMAGES_PATH));
 
   var cssStream = data.css
-    .pipe(gulp.dest(CSS_PATH));
+    .pipe(gulp.dest('app/scss'));
 
   return merge(imgStream, cssStream);
 });
