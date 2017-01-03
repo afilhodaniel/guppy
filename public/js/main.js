@@ -1,1 +1,1 @@
-!function(){console.log("Hello World")}();
+!function(){$(".mifix").each(function(){var o=$(this),i=o.offset().top;$(window).on("resize",function(){$("html, body").animate({scrollTop:0},0),o.removeClass("affix"),i=o.offset().top}),$(window).on("scroll",function(){$(window).scrollTop()>=i?o.addClass("affix"):o.removeClass("mifixed")})})}();
