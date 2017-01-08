@@ -1,1 +1,1 @@
-!function(){$(".mifix").each(function(){var o=$(this),i=o.offset().top;$(window).on("resize",function(){$("html, body").animate({scrollTop:0},0),o.removeClass("affix"),i=o.offset().top}),$(window).on("scroll",function(){$(window).scrollTop()>=i?o.addClass("affix"):o.removeClass("mifixed")})})}();
+!function(){function t(){$(".gpy-toggle-menu").each(function(){_toggleMenu=$(this),_target=$(_toggleMenu.data("target")),_toggleMenu.on("click",function(){_target.toggleClass("active")})})}document.onreadystatechange=function(){"complete"==document.readyState&&t()}}();
