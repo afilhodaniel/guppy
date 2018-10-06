@@ -1,1 +1,0 @@
-!function(){function t(){$(".gpy-toggle-menu").each(function(){_toggleMenu=$(this),_target=$(_toggleMenu.data("target")),_toggleMenu.on("click",function(){_target.toggleClass("active")})})}document.onreadystatechange=function(){"complete"==document.readyState&&t()}}();
